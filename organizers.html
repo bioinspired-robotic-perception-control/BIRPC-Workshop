@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizers - IROS 2025 Workshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .organizers-section {
+            padding: 150px 0 80px;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .organizer-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .organizer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .organizer-image {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        
+        .organizer-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .organizer-info {
+            padding: 20px;
+        }
+        
+        .organizer-info h3 {
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        .organizer-info .affiliation {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .organizer-info .position {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .organizer-info .bio {
+            margin-bottom: 15px;
+        }
+        
+        .organizer-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .organizer-links a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: var(--light-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        .organizer-links a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .correspondence-note {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 60px;
+        }
+        
+        .committee-section h2 {
+            margin-bottom: 30px;
+        }
+        
+        .committee-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .committee-member {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .committee-member h3 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .committee-member p {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .organizers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>IROS 2025 BIRPC-Workshop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="organizers.html" class="active">Organizers</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="organizers-section">
+        <div class="container">
+            <h2>Workshop Organizers</h2>
+            <p class="section-intro">Our workshop is organized by a diverse team of researchers with expertise in bio-inspired robotics, perception, control systems, and artificial intelligence.</p>
+            
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Guanran.png" alt="Guanran Pei">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Guanran Pei*</h3>
+                        <p class="position">PhD Student</p>
+                        <p class="affiliation">CREATE Lab, EPFL</p>
+                        <div class="organizer-links">
+                            <a href="mailto:guanran.pei@epfl.ch"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Qinghua.png" alt="Qinghua Guan">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Qinghua Guan</h3>
+                        <p class="position">Postdoctoral Researcher</p>
+                        <p class="affiliation">CREATE Lab, EPFL</p>
+                        <div class="organizer-links">
+                            <a href="mailto:qinghua.guan@epfl.ch"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Chapa.png" alt="Chapa Sirithunge">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Chapa Sirithunge</h3>
+                        <p class="position">Postdoctoral Researcher</p>
+                        <p class="affiliation">BIRL, Cambridge</p>
+                        <div class="organizer-links">
+                            <a href="mailto:csh66@cam.ac.uk"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Yunqi.png" alt="Yunqi Huang">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Yunqi Huang</h3>
+                        <p class="position">PhD Candidate</p>
+                        <p class="affiliation">UCL</p>
+                        <div class="organizer-links">
+                            <a href="mailto:yunqi.huang.23@ucl.ac.uk"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Thomas.png" alt="Thomas George Thuruthel">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Thomas George Thuruthel</h3>
+                        <p class="position">Assistant Professor</p>
+                        <p class="affiliation">UCL</p>
+                        <div class="organizer-links">
+                            <a href="mailto:t.thuruthel@ucl.ac.uk"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Fumiya.png" alt="Fumiya Iida">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Fumiya Iida</h3>
+                        <p class="position">Full Professor</p>
+                        <p class="affiliation">BIRL, Cambridge</p>
+                        <div class="organizer-links">
+                            <a href="mailto:fi224@cam.ac.uk"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="images/Josie.png" alt="Josie Hughes">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Josie Hughes</h3>
+                        <p class="position">Assistant Professor</p>
+                        <p class="affiliation">CREATE Lab, EPFL</p>
+                        <div class="organizer-links">
+                            <a href="mailto:josie.hughes@epfl.ch"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="correspondence-note">* Organizer to whom any correspondence should be addressed.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>IROS 2025 BIRPC-Workshop</h2>
+                    <p>Bio-Inspired Robotic Perception and Control</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="organizers.html">Organizers</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> guanran.pei@epfl.ch</p>
+                    <p><i class="fas fa-envelope"></i> qinghua.guan@epfl.ch</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IROS Workshop on Bio-Inspired Robotic Perception and Control. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

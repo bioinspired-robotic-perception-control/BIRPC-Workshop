@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute - IROS 2025 BIRPC-Workshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contribute-section {
+            padding: 150px 0 80px;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        
+        .submission-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .submission-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .submission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .submission-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .submission-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .submission-card p {
+            margin-bottom: 20px;
+        }
+        
+        .guidelines-section {
+            margin-bottom: 60px;
+        }
+        
+        .guidelines-section h2 {
+            margin-bottom: 30px;
+        }
+        
+        .guidelines-list {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .guidelines-list h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .guidelines-list ul {
+            margin-left: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .guidelines-list ul li {
+            margin-bottom: 10px;
+        }
+        
+        .guidelines-list p {
+            margin-bottom: 15px;
+        }
+        
+        .submission-process {
+            margin-bottom: 60px;
+        }
+        
+        .submission-process h2 {
+            margin-bottom: 30px;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .process-step h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .important-dates {
+            background-color: var(--light-color);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 60px;
+        }
+        
+        .important-dates h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .dates-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .date-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .date-item h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        .date-item p {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0;
+        }
+        
+        .contact-info {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 20px;
+        }
+        
+        .contact-email {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .contact-email i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .submission-types,
+            .process-steps,
+            .dates-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>IROS 2025 BIRPC-Workshop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="organizers.html">Organizers</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="contribute.html" class="active">Contribute</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contribute-section">
+        <div class="container">
+            <h2>Contribute to the Workshop</h2>
+            <p class="section-intro">We invite researchers and practitioners to contribute to our workshop on Bio-Inspired Robotic Perception and Control. Share your latest research, insights, and innovations with the community.</p>
+            
+            <div class="submission-types">
+                <div class="submission-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Extended Abstracts</h3>
+                    <p>Submit a 2-page extended abstract describing your research on bio-inspired robotics, perception, or control systems. Selected abstracts will be invited for oral presentations.</p>
+                    <a href="#" class="btn secondary">Submission Guidelines</a>
+                </div>
+                
+                <div class="submission-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Demonstrations</h3>
+                    <p>Showcase your bio-inspired robotic systems, perception algorithms, or control methods through live or video demonstrations during the workshop.</p>
+                    <a href="#" class="btn secondary">Demo Guidelines</a>
+                </div>
+            </div>
+            
+            <div class="guidelines-section">
+                <h2>Submission Guidelines</h2>
+                <div class="guidelines-list">
+                    <h3>Extended Abstract Guidelines</h3>
+                    <ul>
+                        <li>Extended abstracts should be 2 pages in length, including figures and references.</li>
+                        <li>Use the provided IROS 2025 workshop template (available for download below).</li>
+                        <li>Clearly state the relevance to the workshop theme of bio-inspired robotic perception and control.</li>
+                        <li>Include preliminary results or well-developed concepts.</li>
+                        <li>Submissions will be reviewed by the workshop's program committee.</li>
+                    </ul>
+                    
+                    <h3>Demonstration Guidelines</h3>
+                    <ul>
+                        <li>Submit a 1-page description of your demonstration, including technical requirements.</li>
+                        <li>Demonstrations can be live (physical robots or systems) or video-based.</li>
+                        <li>For live demonstrations, specify space and power requirements.</li>
+                        <li>For video demonstrations, submit a 3-5 minute video showcasing your work.</li>
+                        <li>Prepare a brief introduction to present before your demonstration.</li>
+                    </ul>
+                    
+                    <p>All submissions should be made through the workshop's submission system. For questions regarding submissions, please contact the workshop organizers at <a href="mailto:guanran.pei@epfl.ch">guanran.pei@epfl.ch</a> or <a href="mailto:qinghua.guan@epfl.ch">qinghua.guan@epfl.ch</a>.</p>
+                    
+                    <a href="#" class="btn primary">Download Submission Templates</a>
+                </div>
+            </div>
+            
+            <div class="important-dates">
+                <h2>Important Dates</h2>
+                <div class="dates-list">
+                    <div class="date-item">
+                        <h3>Call for Papers Deadline</h3>
+                        <p>TBD</p>
+                    </div>
+                    
+                    <div class="date-item">
+                        <h3>Call for Demonstrations Deadline</h3>
+                        <p>TBD</p>
+                    </div>
+                    
+                    <div class="date-item">
+                        <h3>Notification of Acceptance</h3>
+                        <p>TBD</p>
+                    </div>
+                    
+                    <div class="date-item">
+                        <h3>Workshop Date</h3>
+                        <p>TBD</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Questions?</h2>
+                <p>If you have any questions about the submission process or the workshop in general, please don't hesitate to contact us.</p>
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i> guanran.pei@epfl.ch<br>
+                    <i class="fas fa-envelope"></i> qinghua.guan@epfl.ch
+                </div>
+                <p>We look forward to your contributions and to seeing you at IROS 2025!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>IROS 2025 BIRPC-Workshop</h2>
+                    <p>Bio-Inspired Robotic Perception and Control</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="organizers.html">Organizers</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> guanran.pei@epfl.ch</p>
+                    <p><i class="fas fa-envelope"></i> qinghua.guan@epfl.ch</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IROS Workshop on Bio-Inspired Robotic Perception and Control: Bridging Centralized and Decentralized Intelligence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
